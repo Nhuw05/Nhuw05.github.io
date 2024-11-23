@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I Love You</title>
     <style>
-        html, body {
+        html,
+        body {
             overflow: hidden;
             padding: 0;
             margin: 0;
@@ -54,8 +55,12 @@
             font-family: Arial, sans-serif;
         }
 
+        #question h2 {
+            margin-bottom: 20px;
+        }
+
         #question button {
-            margin-top: 10px;
+            margin: 5px;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
@@ -77,8 +82,9 @@
 
     <!-- Câu hỏi xuất hiện sau hiệu ứng -->
     <div id="question">
-        <h2>Anh có yêu em hongg ????</h2>
-        <button onclick="goToNextPage()">Có</button>
+        <h2>Mún coi hongg</h2>
+        <button onclick="goToPage1()">Cóa</button>
+        <button onclick="goToPage2()">Không</button>
     </div>
 
     <script>
@@ -275,8 +281,12 @@
         })(document.getElementById("pinkboard"));
 
         // Chuyển hướng sang trang khác khi nhấn nút
-        function goToNextPage() {
+        function goToPage1() {
             window.location.href = "firstpage.html"; // Thay bằng file bạn muốn chuyển đến
+        }
+
+        function goToPage2() {
+            window.location.href = "cook.html"; // Thay bằng file bạn muốn chuyển đến
         }
     </script>
 </body>
